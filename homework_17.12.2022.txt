@@ -13,6 +13,6 @@
   12 cat /opt/task/start.txt
   13 cd ..
   14 ls -la | tail -4
-  15 ls -la | tail -4 >> /opt/task/start.txt
+  15 ls -la | tail -4 >> /opt/task/start.txt   // В корневом каталоге только директории, нет 4 строчки файлов 
   16 cat /opt/task/start.txt
   17 history > history.txt
