@@ -1,0 +1,8 @@
+   0 nano    // нажимаем ctrl + X и при выходе сохраняем файл test_file.txt в директории /home
+   1 cd /home
+   2 tree
+   3 ls -la /etc/group | tail -5 >> test_file.txt 
+   4 cat test_file.txt
+   5 vi test_file.txt   //меняем режим ввода клавишей i, затем пишем в конце файла DONE, нажимаем ESC и :wq сохраняем файл
+   6 cat test_file.txt
+   7 history > history.txt
