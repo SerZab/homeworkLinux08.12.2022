@@ -1,0 +1,15 @@
+   0 nano myscript.sh
+
+	#!/bin/bash
+	touch /var/sergey.txt
+	date +%Y%m%d_%H-%M >> /var/sergey.txt
+	cat /etc/group | tail -3 | sed ’s/user/sergey’ >> /var/sergey.txt
+
+   1 chmod 744 myscript.sh
+   2 bash myscript.sh
+   3 nano ~/.bashrc
+
+	alias = sergey 'bash /root/myscript.sh'
+
+   4 cat /var/sergey.txt
+   5 history > history.txt
