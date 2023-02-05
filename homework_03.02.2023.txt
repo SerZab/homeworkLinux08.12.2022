@@ -1,0 +1,18 @@
+   0 nano myfirstbashscript.sh
+	
+	#! /bin/bash
+	USER=Sergey
+	DT=$(date)
+	echo "The current date is: $DT"
+	echo "Hello $USER!"
+	echo "We're working in this directory"
+	pwd
+	echo "Number of processes are: "
+	ps -ef | wc -l
+	echo "Permissions on the file /etc/passwd is"
+	ls -l /etc/passwd | awk '{print $1}'
+
+   1 chmod 744 myfirstbashscript.sh
+   2 bash myfirstbashscript.sh
+   3 cat /var/sergey.txt
+   4 history > history.txt
