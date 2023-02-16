@@ -1,0 +1,16 @@
+   0 ssh -i ~/.ssh/id_rsa ec2-user@linux.telran-edu.de
+   1 cd /opt/48_49_morning/sergey_z
+   2 touch taskSergey.sh
+   3 nano taskSergey.sh
+
+	#!/bin/bash
+	
+	for i in {1..10}
+	do
+	  filename="$i$(date +"%H%M%S")"
+	  touch "$filename"
+	done
+
+   4 chmod 744 taskSergey.sh
+   5 crontab -e
+   6 15 * * * * /opt/48_49_morning/sergey_z/taskSergey.sh
