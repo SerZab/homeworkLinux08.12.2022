@@ -4,11 +4,10 @@
    3 nano taskSergey.sh
 
 	#!/bin/bash
-	
+	DATE=$(date +"%H_%M_%S")
 	for i in {1..10}
 	do
-	  filename="$i$(date +"%H%M%S")"
-	  touch "$filename"
+	  touch "$i"_"$DATE".txt
 	done
 
    4 chmod 744 taskSergey.sh
